@@ -1,0 +1,58 @@
+Solusi Yang Ditemukan : RLDUR
+Cost dari Solusi : 51
+Waktu eksekusi: 0.306 ms
+Banyak iterasi: 9 iterasi
+
+Initial
+XXXXXXX
+XZ0*OXX
+X****XX
+X1***XX
+X****XX
+X****XX
+XXXXXXX
+
+Step 1 : R
+XXXXXXX
+X*0*ZXX
+X****XX
+X1***XX
+X****XX
+X****XX
+XXXXXXX
+
+Step 2 : L
+XXXXXXX
+XZ0*OXX
+X****XX
+X1***XX
+X****XX
+X****XX
+XXXXXXX
+
+Step 3 : D
+XXXXXXX
+X*0*OXX
+X****XX
+X1***XX
+X****XX
+XZ***XX
+XXXXXXX
+
+Step 4 : U
+XXXXXXX
+XZ0*OXX
+X****XX
+X1***XX
+X****XX
+X****XX
+XXXXXXX
+
+Step 5 : R
+XXXXXXX
+X*0*ZXX
+X****XX
+X1***XX
+X****XX
+X****XX
+XXXXXXX
