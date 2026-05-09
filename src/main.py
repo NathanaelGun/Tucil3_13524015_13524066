@@ -4,6 +4,7 @@ from board import create_board_info, create_state_awal
 from algorithms.ucs import uniform_cost_search
 from algorithms.gbfs import greedy_best_first_search
 from algorithms.astar import a_star_search
+from algorithms.bfs import breadth_first_search
 from heuristic import choose_heuristic
 from utils import print_result, playback, save_solution, get_input_path
 
@@ -31,6 +32,9 @@ def run_solver(board_info, start_state, algorithm: str):
         heuristic_choice = input(">> Heuristic apa yang anda pilih? (H1/H2/H3): ").strip().upper()
         selected_heuristic = choose_heuristic(heuristic_choice)
         return a_star_search(board_info, start_state, selected_heuristic)
+    
+    if algorithm == "BFS":
+        return breadth_first_search(board_info, start_state)
 
     print("Karena input Algoritma yang kamu masukkan tidak tersedia, akan beralih ke Algoritma default 'UCS'.")
     return uniform_cost_search(board_info, start_state)
@@ -45,7 +49,7 @@ def main():
         board_info = create_board_info(puzzle)
         start_state = create_state_awal(board_info)
 
-        algorithm = input(">> Algoritma apa yang anda pilih? (UCS/GBFS/A*): ").strip().upper()
+        algorithm = input(">> Algoritma apa yang anda pilih? (UCS/GBFS/A*/BFS): ").strip().upper()
 
         result = run_solver(board_info, start_state, algorithm)
 
