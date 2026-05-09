@@ -20,7 +20,9 @@ def run_solver(board_info, start_state, algorithm: str):
         print("H1 = Manhattan")
         print("H2 = Pythagoras")
         print("H3 = Manhattan + checkpoint tersisa")
-        heuristic_choice = input(">> Heuristic apa yang anda pilih? (H1/H2/H3): ").strip().upper()
+        print("H4 = Manhattan rantai checkpoint")
+        print("H5 = Jarak minimum slide ke target berikutnya")
+        heuristic_choice = input(">> Heuristic apa yang anda pilih? (H1/H2/H3/H4/H5): ").strip().upper()
         selected_heuristic = choose_heuristic(heuristic_choice)
         return greedy_best_first_search(board_info, start_state, selected_heuristic)
 
@@ -29,7 +31,9 @@ def run_solver(board_info, start_state, algorithm: str):
         print("H1 = Manhattan")
         print("H2 = Pythagoras")
         print("H3 = Manhattan + checkpoint tersisa")
-        heuristic_choice = input(">> Heuristic apa yang anda pilih? (H1/H2/H3): ").strip().upper()
+        print("H4 = Manhattan rantai checkpoint")
+        print("H5 = Jarak minimum slide ke target berikutnya")
+        heuristic_choice = input(">> Heuristic apa yang anda pilih? (H1/H2/H3/H4/H5): ").strip().upper()
         selected_heuristic = choose_heuristic(heuristic_choice)
         return a_star_search(board_info, start_state, selected_heuristic)
     

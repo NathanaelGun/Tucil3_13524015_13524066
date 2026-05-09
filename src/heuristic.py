@@ -1,5 +1,7 @@
 import math
+from collections import deque
 from board import BoardInfo, State
+from movement import get_valid_neighbors
 
 
 def get_min_traversable_cost(board_info: BoardInfo) -> int:
@@ -46,6 +48,50 @@ def h3_manhattan_checkpoint(board_info: BoardInfo, state: State) -> float:
     return (distance + remaining) * min_cost
 
 
+def h4_checkpoint_chain_manhattan(board_info: BoardInfo, state: State) -> float:
+    min_cost = get_min_traversable_cost(board_info)
+    points = [(state.row, state.col)]
+
+    checkpoint_number = state.next_checkpoint
+    while checkpoint_number in board_info.checkpoints:
+        points.append(board_info.checkpoints[checkpoint_number])
+        checkpoint_number += 1
+
+    points.append(board_info.goal)
+
+    total_distance = 0
+    for i in range(len(points) - 1):
+        row_a, col_a = points[i]
+        row_b, col_b = points[i + 1]
+        total_distance += abs(row_a - row_b) + abs(col_a - col_b)
+
+    return total_distance * min_cost
+
+
+def h5_sliding_move_distance(board_info: BoardInfo, state: State) -> float:
+    target = get_current_target(board_info, state)
+    min_cost = get_min_traversable_cost(board_info)
+
+    queue = deque([(state, 0)])
+    visited = {state}
+
+    while queue:
+        current_state, slide_count = queue.popleft()
+
+        if (current_state.row, current_state.col) == target:
+            return slide_count * min_cost
+
+        for neighbor in get_valid_neighbors(board_info, current_state):
+            next_state = neighbor.state
+            if next_state in visited:
+                continue
+
+            visited.add(next_state)
+            queue.append((next_state, slide_count + 1))
+
+    return 0
+
+
 def h0_zero(board_info: BoardInfo, state: State) -> float:
     return 0
 
@@ -59,6 +105,10 @@ def choose_heuristic(choice: str):
         return h2_pythagoras
     if choice == "H3":
         return h3_manhattan_checkpoint
+    if choice == "H4":
+        return h4_checkpoint_chain_manhattan
+    if choice == "H5":
+        return h5_sliding_move_distance
     if choice in {"H0", "ZERO"}:
         return h0_zero
 
