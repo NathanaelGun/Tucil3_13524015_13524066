@@ -69,6 +69,10 @@ Jika ingin menambahkan file input, buat atau simpan file tersebut di folder `tes
 
 ```txt
 Tucil3_13524015_13524066/
+├── bin/
+│   └── run.bat
+├── doc/
+│   └── Tucil3_13524015_13524066.pdf
 ├── src/
 │   ├── main.py
 │   ├── parser.py
@@ -106,5 +110,5 @@ Tucil3_13524015_13524066/
 │           ├── Manhattan + Checkpoint Tersisa/
 │           ├── Manhattan Rantai Checkpoint/
 │           └── Jarak Minimum Slide/
-├── README.md
+└──  README.md	
 ```
