@@ -41,11 +41,19 @@ Solusi dianggap berhasil jika aktor berhenti tepat di titik tujuan `O` dan selur
 
 ---
 ## Cara Menjalankan
-Jalankan langsung dengan Python:
+Jalankan file executable dari root project dengan perintah:
+
+```bash
+bin/run.bat
+```
+
+Atau jalankan langsung dengan Python:
 
 ```bash
 python src/main.py
 ```
+
+Atau jalankan dengan 
 
 Jika ingin menambahkan file input, buat atau simpan file tersebut di folder `test/input/`.
 
