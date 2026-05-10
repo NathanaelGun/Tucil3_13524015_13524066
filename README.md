@@ -40,6 +40,12 @@ Aktor hanya dapat bergerak ke empat arah, yaitu atas, bawah, kiri, dan kanan. Se
 Solusi dianggap berhasil jika aktor berhenti tepat di titik tujuan `O` dan seluruh checkpoint telah dilewati sesuai urutan.
 
 ---
+
+## Requirement Program
+
+- Python 3.10 atau lebih baru
+
+---
 ## Cara Menjalankan
 Jalankan file executable dari root project dengan perintah:
 
