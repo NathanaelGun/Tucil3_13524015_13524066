@@ -1,0 +1,92 @@
+Solusi Yang Ditemukan : RDULDRU
+Cost dari Solusi : 96
+Waktu eksekusi: 0.722 ms
+Banyak iterasi: 9 iterasi
+
+Initial
+XXXXXXXXX
+XZ**0**OX
+X*******X
+X*******X
+X*******X
+X*******X
+X*******X
+X*2****1X
+XXXXXXXXX
+
+Step 1 : R
+XXXXXXXXX
+X***0**ZX
+X*******X
+X*******X
+X*******X
+X*******X
+X*******X
+X*2****1X
+XXXXXXXXX
+
+Step 2 : D
+XXXXXXXXX
+X***0**OX
+X*******X
+X*******X
+X*******X
+X*******X
+X*******X
+X*2****ZX
+XXXXXXXXX
+
+Step 3 : U
+XXXXXXXXX
+X***0**ZX
+X*******X
+X*******X
+X*******X
+X*******X
+X*******X
+X*2****1X
+XXXXXXXXX
+
+Step 4 : L
+XXXXXXXXX
+XZ**0**OX
+X*******X
+X*******X
+X*******X
+X*******X
+X*******X
+X*2****1X
+XXXXXXXXX
+
+Step 5 : D
+XXXXXXXXX
+X***0**OX
+X*******X
+X*******X
+X*******X
+X*******X
+X*******X
+XZ2****1X
+XXXXXXXXX
+
+Step 6 : R
+XXXXXXXXX
+X***0**OX
+X*******X
+X*******X
+X*******X
+X*******X
+X*******X
+X*2****ZX
+XXXXXXXXX
+
+Step 7 : U
+XXXXXXXXX
+X***0**ZX
+X*******X
+X*******X
+X*******X
+X*******X
+X*******X
+X*2****1X
+XXXXXXXXX
