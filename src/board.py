@@ -2,7 +2,6 @@ from dataclasses import dataclass
 
 @dataclass(frozen=True)
 class State:
-    # representasi posisi aktor
     row: int
     col: int
     next_checkpoint: int

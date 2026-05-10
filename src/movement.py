@@ -51,7 +51,6 @@ def slide(board_info: BoardInfo, state: State, direction: str) -> SlideResult:
                                reason="Pemain keluar papan.",
                                passed_tiles=passed_tiles,)
 
-        # Tile berikutnya adalah X, berhenti di tile saat ini
         if is_wall(board_info, next_row, next_col):
             if len(passed_tiles) == 0:
                 return SlideResult(valid=False,
@@ -68,10 +67,8 @@ def slide(board_info: BoardInfo, state: State, direction: str) -> SlideResult:
                                direction=direction,
                                reason="",
                                passed_tiles=passed_tiles,)
-        # Tile berikutnya dilewati.
         tile = get_tile(board_info, next_row, next_col)
 
-        # Jika melewati lava, game over.
         if is_lava(board_info, next_row, next_col):
             return SlideResult(valid=False,
                                state=None,
@@ -79,11 +76,9 @@ def slide(board_info: BoardInfo, state: State, direction: str) -> SlideResult:
                                direction=direction,
                                reason="Pemain melewati lava.",
                                passed_tiles=passed_tiles + [(next_row, next_col)],)
-        # Menjumlahkan cost tile yang dilewati.
         total_cost += get_cost(board_info, next_row, next_col)
         passed_tiles.append((next_row, next_col))
 
-        # Tile angka, cek urutan checkpoint.
         if tile.isdigit():
             checkpoint_number = int(tile)
             if checkpoint_number == next_checkpoint:
@@ -96,7 +91,6 @@ def slide(board_info: BoardInfo, state: State, direction: str) -> SlideResult:
                                    move_cost=0,
                                    direction=direction,reason=(f"Checkpoint {checkpoint_number} dilewati sebelum checkpoint {next_checkpoint}."),
                                    passed_tiles=passed_tiles,)
-        # Update posisi pemain.
         current_row = next_row
         current_col = next_col
 
