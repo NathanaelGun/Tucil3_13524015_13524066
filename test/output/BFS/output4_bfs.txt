@@ -1,0 +1,18 @@
+Solusi Yang Ditemukan : R
+Cost dari Solusi : 28
+Waktu eksekusi: 0.098 ms
+Banyak iterasi: 3 iterasi
+
+Initial
+XXXXXXX
+XZ***OX
+X*****X
+X*****X
+XXXXXXX
+
+Step 1 : R
+XXXXXXX
+X****ZX
+X*****X
+X*****X
+XXXXXXX

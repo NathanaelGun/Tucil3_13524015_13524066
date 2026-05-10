@@ -1,0 +1,31 @@
+Solusi Yang Ditemukan : DR
+Cost dari Solusi : 26
+Waktu eksekusi: 0.203 ms
+Banyak iterasi: 4 iterasi
+
+Initial
+XXXXXXXX
+XZ*****X
+X*LXX**X
+X***L**X
+X**XX**X
+X*****OX
+XXXXXXXX
+
+Step 1 : D
+XXXXXXXX
+X******X
+X*LXX**X
+X***L**X
+X**XX**X
+XZ****OX
+XXXXXXXX
+
+Step 2 : R
+XXXXXXXX
+X******X
+X*LXX**X
+X***L**X
+X**XX**X
+X*****ZX
+XXXXXXXX

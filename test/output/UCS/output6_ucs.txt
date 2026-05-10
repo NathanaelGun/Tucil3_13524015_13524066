@@ -1,0 +1,70 @@
+Solusi Yang Ditemukan : RDLUR
+Cost dari Solusi : 66
+Waktu eksekusi: 0.426 ms
+Banyak iterasi: 12 iterasi
+
+Initial
+XXXXXXXXX
+XZ**0**OX
+X*******X
+X*******X
+X*******X
+X*******X
+X*******X
+X*2****1X
+XXXXXXXXX
+
+Step 1 : R
+XXXXXXXXX
+X***0**ZX
+X*******X
+X*******X
+X*******X
+X*******X
+X*******X
+X*2****1X
+XXXXXXXXX
+
+Step 2 : D
+XXXXXXXXX
+X***0**OX
+X*******X
+X*******X
+X*******X
+X*******X
+X*******X
+X*2****ZX
+XXXXXXXXX
+
+Step 3 : L
+XXXXXXXXX
+X***0**OX
+X*******X
+X*******X
+X*******X
+X*******X
+X*******X
+XZ2****1X
+XXXXXXXXX
+
+Step 4 : U
+XXXXXXXXX
+XZ**0**OX
+X*******X
+X*******X
+X*******X
+X*******X
+X*******X
+X*2****1X
+XXXXXXXXX
+
+Step 5 : R
+XXXXXXXXX
+X***0**ZX
+X*******X
+X*******X
+X*******X
+X*******X
+X*******X
+X*2****1X
+XXXXXXXXX

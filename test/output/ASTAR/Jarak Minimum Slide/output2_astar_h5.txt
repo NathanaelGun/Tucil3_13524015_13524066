@@ -1,0 +1,40 @@
+Solusi Yang Ditemukan : RDU
+Cost dari Solusi : 70
+Waktu eksekusi: 1.273 ms
+Banyak iterasi: 7 iterasi
+
+Initial
+XXXXXXX
+XZ*0*OX
+X*****X
+X*****X
+X*****X
+X****1X
+XXXXXXX
+
+Step 1 : R
+XXXXXXX
+X**0*ZX
+X*****X
+X*****X
+X*****X
+X****1X
+XXXXXXX
+
+Step 2 : D
+XXXXXXX
+X**0*OX
+X*****X
+X*****X
+X*****X
+X****ZX
+XXXXXXX
+
+Step 3 : U
+XXXXXXX
+X**0*ZX
+X*****X
+X*****X
+X*****X
+X****1X
+XXXXXXX

@@ -1,0 +1,3 @@
+Solusi tidak ditemukan.
+Waktu eksekusi: 0.074 ms
+Banyak iterasi: 2 iterasi
